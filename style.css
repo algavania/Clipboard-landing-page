@@ -185,13 +185,14 @@ footer img {
   margin-bottom: 2rem;
 }
 
-footer ul {
+footer div ul {
   text-decoration: none;
   list-style: none;
+  text-align: center;
   margin-bottom: 2rem;
 }
 
-footer li {
+footer div ul li {
   margin-bottom: 1.5rem;
   cursor: pointer;
   transition: 0.3s;
@@ -202,7 +203,7 @@ footer a {
   color: var(--dark-grayish-blue);
 }
 
-footer ul li a:hover {
+footer div ul li a:hover {
   color: var(--strong-cyan);
 }
 
@@ -215,6 +216,12 @@ footer ul li a:hover {
   cursor: pointer;
   fill: var(--social-media-gray);
   transition: 0.3s;
+}
+
+.social-media a {
+  line-height: 0; 
+  font-size: 0;
+  color: transparent; 
 }
 
 .social-media svg:hover {
@@ -302,27 +309,25 @@ footer ul li a:hover {
     margin-bottom: 0;
   }
 
-  footer ul {
+  footer div ul {
     width: 100%;
-    margin-left: 25%;
     margin-top: 1.5rem;
     margin-bottom: 0;
+    margin-left: 20%;
     display: flex;
+    column-count: 3;
+    flex-wrap: wrap;
+    text-align: start;
   }
 
-  footer li {
-    margin-right: 2rem;
-  }
-
-  footer ul div {
-    margin-right: 4rem;
-    width: 138px;
+  footer div ul li {
+    margin-right: 3rem;
+    width: 20%;
   }
 
   .social-media {
     width: 25rem;
-    display: flex;
-    flex-direction: row;
+    float: right;
   }
 
   .social-media svg {
@@ -350,7 +355,7 @@ footer ul li a:hover {
     width: 4rem;
   }
 
-  footer li {
+  footer div ul li {
     font-size: 1.3rem;
   }
 
@@ -397,5 +402,4 @@ footer ul li a:hover {
     width: 30%;
     margin-bottom: 5rem;
   }
-
 }
