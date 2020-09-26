@@ -201,6 +201,7 @@ footer div ul li {
 footer a {
   text-decoration: none;
   color: var(--dark-grayish-blue);
+  transition: 0.3s;
 }
 
 footer div ul li a:hover {
